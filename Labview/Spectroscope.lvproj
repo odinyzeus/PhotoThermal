@@ -36,12 +36,9 @@
 			</Item>
 			<Item Name="Simple State Machine Documentation.html" Type="Document" URL="../documentation/Simple State Machine Documentation.html"/>
 		</Item>
-		<Item Name="Type Definitions" Type="Folder"/>
-		<Item Name="Vi" Type="Folder" URL="../Vi">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="controls" Type="Folder" URL="../controls">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Type Definitions" Type="Folder">
+			<Item Name="Data.ctl" Type="VI" URL="../controls/Data.ctl"/>
+			<Item Name="State.ctl" Type="VI" URL="../controls/State.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -77,17 +74,57 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="LVRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRangeTypeDef.ctl"/>
 				<Item Name="Real Matrix NI_Silver.ctl" Type="VI" URL="/&lt;vilib&gt;/silver_ctls/ArrayMatrixCluster/Real Matrix NI_Silver.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Stanford Research 830.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Stanford Research 830/Stanford Research 830.lvlib"/>
+				<Item Name="Configure Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Configure/Configure Reference.vi"/>
+				<Item Name="Configure Sensitivity and Reserve.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Configure/Configure Sensitivity and Reserve.vi"/>
+				<Item Name="Configure Filter.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Configure/Configure Filter.vi"/>
+				<Item Name="Configure Channel Display.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Configure/Configure Channel Display.vi"/>
+				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Close.vi"/>
+				<Item Name="Read.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Data/Read.vi"/>
+				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Initialize.vi"/>
+				<Item Name="Read (All Parameters).vi" Type="VI" URL="/&lt;instrlib&gt;/Stanford Research 830/Public/Data/Read (All Parameters).vi"/>
 			</Item>
+			<Item Name="process.ctl" Type="VI" URL="../controls/process.ctl"/>
+			<Item Name="Parameters.ctl" Type="VI" URL="../controls/Parameters.ctl"/>
+			<Item Name="Lambda.ctl" Type="VI" URL="../controls/Lambda.ctl"/>
+			<Item Name="LockIn.ctl" Type="VI" URL="../controls/LockIn.ctl"/>
+			<Item Name="lamp.ctl" Type="VI" URL="../controls/lamp.ctl"/>
+			<Item Name="monochromator.ctl" Type="VI" URL="../controls/monochromator.ctl"/>
+			<Item Name="powermeter.ctl" Type="VI" URL="../controls/powermeter.ctl"/>
+			<Item Name="Estados.ctl" Type="VI" URL="../Mediciones/controls/Estados.ctl"/>
+			<Item Name="process-init.vi" Type="VI" URL="../Vi/process-init.vi"/>
+			<Item Name="Status-get.vi" Type="VI" URL="../Vi/Status-get.vi"/>
+			<Item Name="process-exe.vi" Type="VI" URL="../Vi/process-exe.vi"/>
+			<Item Name="process-estabilizing.vi" Type="VI" URL="../Vi/process-estabilizing.vi"/>
+			<Item Name="MeasureData.vi" Type="VI" URL="../Vi/MeasureData.vi"/>
+			<Item Name="Process-Sample.vi" Type="VI" URL="../Vi/Process-Sample.vi"/>
+			<Item Name="Process-Next.vi" Type="VI" URL="../Vi/Process-Next.vi"/>
+			<Item Name="powermeter-medir.vi" Type="VI" URL="../Vi/powermeter-medir.vi"/>
+			<Item Name="powermeter-lambda.vi" Type="VI" URL="../Vi/powermeter-lambda.vi"/>
+			<Item Name="FileSave.vi" Type="VI" URL="../Vi/FileSave.vi"/>
+			<Item Name="graph-real.vi" Type="VI" URL="../Vi/graph-real.vi"/>
+			<Item Name="Graph-Init.vi" Type="VI" URL="../Vi/Graph-Init.vi"/>
+			<Item Name="lamp-init.vi" Type="VI" URL="../Vi/lamp-init.vi"/>
+			<Item Name="lamp-IsPort.vi" Type="VI" URL="../Vi/lamp-IsPort.vi"/>
+			<Item Name="lamp-power.vi" Type="VI" URL="../Vi/lamp-power.vi"/>
+			<Item Name="Lamp-IsConnected.vi" Type="VI" URL="../Vi/Lamp-IsConnected.vi"/>
+			<Item Name="lamp-start.vi" Type="VI" URL="../Vi/lamp-start.vi"/>
+			<Item Name="mono-config.vi" Type="VI" URL="../Vi/mono-config.vi"/>
+			<Item Name="mono-Isport.vi" Type="VI" URL="../Vi/mono-Isport.vi"/>
+			<Item Name="mono-shutter.vi" Type="VI" URL="../Vi/mono-shutter.vi"/>
+			<Item Name="mono-Isconnected.vi" Type="VI" URL="../Vi/mono-Isconnected.vi"/>
+			<Item Name="mono-grat.vi" Type="VI" URL="../Vi/mono-grat.vi"/>
+			<Item Name="mono-lambda.vi" Type="VI" URL="../Vi/mono-lambda.vi"/>
+			<Item Name="SR830-config.vi" Type="VI" URL="../Vi/SR830-config.vi"/>
+			<Item Name="SR830-Check-Port.vi" Type="VI" URL="../Vi/SR830-Check-Port.vi"/>
+			<Item Name="Power-config.vi" Type="VI" URL="../Vi/Power-config.vi"/>
+			<Item Name="FilePowerSave.vi" Type="VI" URL="../Vi/FilePowerSave.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
